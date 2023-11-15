@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let c of components" [routerLink]="c.redirectTo" detail>
+      <ion-icon [name]="c.icon" slot="start" color="primary"></ion-icon>
+        {{c.name}}
+    </ion-item>
+  </ion-list>
+
+  <!-- 
+  <ion-button routerLink="/alert">
+    Alerta
+  </ion-button>
+
+  <ion-button routerLink="/action-sheet">
+    action-sheet
+  </ion-button>
+-->
+<ion-avatar>
+  <img src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="Usuario">
+</ion-avatar>
+<ion-button (click)="tuFuncion()">William Lopez</ion-button>
+
+</ion-content>
